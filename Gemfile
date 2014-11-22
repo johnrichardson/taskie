@@ -38,3 +38,5 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem "font-awesome-rails", '~> 4.2.0.0' #https://github.com/bokmann/font-awesome-rails
+
