@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
-# Use mysql as the database for Active Record
-#gem 'mysql2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -41,4 +39,19 @@ gem 'spring',        group: :development
 gem "font-awesome-rails", '~> 4.2.0.0' #https://github.com/bokmann/font-awesome-rails
 
 gem 'pg'
-gem 'rails_12factor', group: :production
+gem 'rails_12factor', group: :production #https://github.com/heroku/rails_12factor
+
+# Devise gem for authentication
+gem 'devise'
+
+#gem 'nested_form'
+
+gem 'pry'
+
+#gem 'remotipart'
+#gem 'less-rails'
+
+gem "omniauth"
+#gem "omniauth-twitter"
+gem "omniauth-facebook"
+gem "figaro" #manage env variables https://github.com/laserlemon/figaro
