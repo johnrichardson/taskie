@@ -41,3 +41,4 @@ gem 'spring',        group: :development
 gem "font-awesome-rails", '~> 4.2.0.0' #https://github.com/bokmann/font-awesome-rails
 
 gem 'pg'
+gem 'rails_12factor', group: :production
