@@ -24,7 +24,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"> <%= image_tag 'dialectic-small.png'%></a>
+      <%= link_to image_tag('dialectic-small.png'), root_path, :class => "navbar-brand" %>
+
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -35,8 +36,13 @@
         <li>
           <a href="#">Services</a>
         </li>
-        <li>
-          <a href="#">Technologies</a>
+        <li class="dropdown">
+          <a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">Technologies <span class="caret"></span></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><%= link_to "PHP", technologies_url(name: 'php') %> </li>
+            <li><%= link_to ".NET", technologies_url(name: 'dotnet') %></li>
+            <li><%= link_to "Testing", technologies_url(name: 'testing') %></li>
+          </ul>
         </li>
         <li>
           <a href="#">Contact</a>
