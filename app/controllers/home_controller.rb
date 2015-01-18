@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   end
 
   def techs
-    techarr = ['php', 'dotnet', 'testing']
+    techarr = ['php', 'dotnet', 'testing', 'mobileapp']
     @techname = params[:name]
     unless techarr.include?(@techname)
       redirect to root_path
