@@ -17,7 +17,7 @@ class ContactsController < ApplicationController
   # since you'll be able to reuse the same permit list between create and update. Also, you
   # can specialize this method with per-user checking of permissible attributes.
   def contact_params
-    params.permit(:email, :phone, :name, :message)
+    params.require(:contact).permit(:email, :phone, :name, :message)
   end
 
 end
