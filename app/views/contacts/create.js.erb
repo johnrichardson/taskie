@@ -1,0 +1,8 @@
+<%content=""%>
+<% @c.errors.messages.each do |key,val|%>
+<%content += "<li>#{val}</li>"%>
+
+<% end %>
+console.log(<%=content%>)
+$('.error-list ul').html(<%=content%>)
+
