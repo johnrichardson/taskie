@@ -9,4 +9,8 @@ class HomeController < ApplicationController
       redirect to root_path
     end
   end
+
+  def services
+
+  end
 end

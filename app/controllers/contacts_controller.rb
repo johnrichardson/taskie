@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
       # ...
     else
       flash.now[:error] = "Could not save Contact"
-      p @c.errors
+      p @c.errors.messages
    end
 
     #render :json => @c.name
